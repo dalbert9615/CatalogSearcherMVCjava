@@ -25,3 +25,6 @@ replay_pid*
 
 # ext var to config
 db.properties
+
+# Referenced Libraries vscode
+.vscode

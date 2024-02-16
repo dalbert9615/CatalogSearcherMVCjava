@@ -2,6 +2,8 @@ package main.java.controllers;
 
 import java.awt.event.*;
 import javax.swing.JOptionPane;
+
+import main.java.database.DataLoaderTest;
 import main.java.models.catalogue.ModelCatalogue;
 import main.java.models.elements.Item;
 import main.java.views.ViewCatalogue;
@@ -48,5 +50,4 @@ public class ControllerCatalogue {
 			this.vista.setPreuIva(Double.toString(producto.getPreuIva()) + "€");
 		}
 	}
-
 }

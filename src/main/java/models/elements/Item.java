@@ -1,5 +1,7 @@
 package main.java.models.elements;
 
+import java.util.Objects;
+
 public class Item {
 	private String codi;
 	private String descripcio;
@@ -41,7 +43,6 @@ public class Item {
 		this.preu = preu;
 	}
 
-
 	public double getPreuIva() {
 		return preu + preu * this.getIVA();
 	}
@@ -54,4 +55,20 @@ public class Item {
 		this.valorIva.setValor(valor);
 	}
 
+	@Override
+	public int hashCode() {
+		return Objects.hash(codi);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Item other = (Item) obj;
+		return Objects.equals(codi, other.codi);
+	}
 }
