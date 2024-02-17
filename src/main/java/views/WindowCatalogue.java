@@ -41,34 +41,42 @@ public class WindowCatalogue extends JFrame implements ViewCatalogue {
 		this.pack();
 	}
 
+	@Override
 	public void setCodi(String s) {
 		this.codiCaja.setText(s);
 	}
 
+	@Override
 	public String getCodi() {
 		return this.codiCaja.getText();
 	}
 
+	@Override
 	public void addOyenteTeclaBuscar(ActionListener l) {
 		this.buscar.addActionListener(l);
 	}
 
+	@Override
 	public void addOyenteTeclaClear(ActionListener l) {
 		this.clear.addActionListener(l);
 	}
 
+	@Override
 	public void setDescription(String s) {
 		this.descriptionBox.setText(s);
 	}
 
+	@Override
 	public void setPreu(String s) {
 		this.preuCaja.setText(s);
 	}
 
+	@Override
 	public void setPreuIva(String s) {
 		this.preuIvaCaja.setText(s);
 	}
 
+	@Override
 	public void setIva(String s) {
 		this.ivaCaja.setText(s);
 	}

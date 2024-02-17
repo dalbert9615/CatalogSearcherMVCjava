@@ -8,14 +8,17 @@ private static double valor=0.04;
 		super();
 	}
 
+	@Override
 	public double getValor() {
 		return TaxSuperReduced.valor;
 	}
 	
+	@Override
 	public void setValor(double valor) {
 		TaxSuperReduced.valor=valor;
 	}
 
+	@Override
 	public String toString() {
 		return 
 				"IVA: "+TaxSuperReduced.valor*100+"%"+"\n";

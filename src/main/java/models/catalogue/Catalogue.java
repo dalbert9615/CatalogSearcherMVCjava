@@ -1,18 +1,16 @@
 package main.java.models.catalogue;
 
 import java.util.Map;
-
 import main.java.models.elements.Item;
 
 public class Catalogue implements ModelCatalogue{
-
-	//private Item[] productes;
 	private Map<String, Item> productos;
 	
 	public Catalogue(Map<String, Item> productos) {
 		this.productos=productos;
 	}
 
+	@Override
 	public Item getProducte(String codi) {
 		return productos.get(codi);
 	}

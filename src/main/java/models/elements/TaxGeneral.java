@@ -8,14 +8,17 @@ public class TaxGeneral extends Tax{
 		super();
 	}
 
+	@Override
 	public double getValor() {
 		return TaxGeneral.valor;
 	}
 	
+	@Override
 	public void setValor(double valor) {
 		TaxGeneral.valor=valor;
 	}
 
+	@Override
 	public String toString() {
 		return 
 				"IVA: "+TaxGeneral.valor*100+"%"+"\n";
