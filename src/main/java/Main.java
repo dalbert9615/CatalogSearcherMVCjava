@@ -2,7 +2,6 @@ package main.java;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import javax.swing.SwingUtilities;
 import main.java.controllers.ControllerCatalogue;
 import main.java.database.DataLoaderMySQL;

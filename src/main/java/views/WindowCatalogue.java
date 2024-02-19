@@ -15,7 +15,7 @@ public class WindowCatalogue extends JFrame implements ViewCatalogue {
 	private void init() {
 		this.setTitle("CSoI");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setLocation(1500, 250);
+		this.setLocation(0, 0);
 		this.setResizable(false);
 		this.setIconImage(new ImageIcon("src/main/resources/images/icon.png").getImage());
 
